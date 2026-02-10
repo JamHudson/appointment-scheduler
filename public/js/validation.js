@@ -14,7 +14,7 @@ function clearErrors() {
 
 function validate() {
     let isValid = true;
-
+    clearErrors();
     let fname = fnameElement.value.trim();
     let lname = lnameElement.value.trim();
 
