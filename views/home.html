@@ -1,28 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/validation.js" defer></script>
+    <link rel="stylesheet" href="styles/styles.css">
     <title>Appointment Scheduler</title>
 </head>
-<body>
-    
 
-    <form action="/submit" method="post" >
+<body>
+
+
+    <form id="appointment-form" action="/submit" method="post">
         <label for="fname">First Name
             <span id="fname-err" class="err">
                 error
             </span>
         </label>
         <input type="text" name="fname" id="fname">
-
-                <label for="lname">Last Name
+        <br>
+        <label for="lname">Last Name
             <span id="lname-err" class="err">
                 error
             </span>
         </label>
         <input type="text" name="lname" id="lname">
+
+        <br>
+        <label for="date">Date  
+            <span id="date-err" class="err">
+                error
+            </span>
+        </label>
+        <input type="date" name="date" id="date">
+
+        <br>
+        <label for="time">Time
+            <span id="time-err" class="err">
+                error
+            </span>
+        </label>
+        <input type="time" name="time" id="time">
+        <br>
         <button type="submit"> submit</button>
     </form>
 </body>
+
 </html>
